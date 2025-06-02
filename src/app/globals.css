@@ -1,12 +1,32 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Monrope";
+  font-style: normal;
+  font-weight: 400 500 600 700;
+  font-display: swap;
+  src: url(../../public//fonts/Manrope/Manrope-VariableFont_wght.ttf)
+    format("ttf");
+}
+
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../public/fonts/Forum/Forum-Regular.ttf) format("woff2");
+}
 
 :root {
+  --white: #ffffff;
+  --black: #0c0b10;
   --background-color: #e2d3ce;
 }
 
 body {
   background-color: var(--background-color);
-  max-width: 1110px;
+  max-width: 1158px;
+  padding: 0 24px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Forum", serif;
+  font-size: 16px;
 }
